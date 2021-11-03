@@ -1,15 +1,15 @@
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=Big5" >
-<!--ºô­¶¼ĞÃD¥ª°¼Åã¥Ü-->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<!--ç¶²é æ¨™é¡Œå·¦å´é¡¯ç¤º-->
 <link rel="icon" href="inemu.ico" type="image/x-icon">
-<!--¦¬ÂÃ§¨Åã¥Ü¹Ï¥Ü-->
+<!--æ”¶è—å¤¾é¡¯ç¤ºåœ–ç¤º-->
 <link rel="shortcut icon" href="inemu.ico" type="image/x-icon">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <div id="img-wrap">
-<title>µwºĞ¤Á³Î¹ê»Ú®e¶q­pºâ</title>
+<title>ç¡¬ç¢Ÿåˆ‡å‰²å¯¦éš›å®¹é‡è¨ˆç®—</title>
 <style type="text/css">
 body {
 	/* background:url(__original_drawn_by_aki_aki_k6.jpg) no-repeat center center;
@@ -70,12 +70,12 @@ body {
 }
 </style>
 <script language="JavaScript" type="text/JavaScript">
-/* ¹ê»Ú®e¶q */
+/* å¯¦éš›å®¹é‡ */
 	function calc() {
     hdsize=document.data.hdsize.value;
-    if (hdsize=="") {return err("½Ğ¿é¤J¼Æ¦r¦n¶Ü¡I");}
+    if (hdsize=="") {return err("è«‹è¼¸å…¥æ•¸å­—å¥½å—ï¼");}
     hdsize=parseFloat(hdsize);
-		if ((hdsize+"")!=document.data.hdsize.value) {return err("®e¶q¤j¤p¿é¤J¿ù»~¡A½Ğ¦A¿é¤J¤@¦¸¡I");}
+		if ((hdsize+"")!=document.data.hdsize.value) {return err("å®¹é‡å¤§å°è¼¸å…¥éŒ¯èª¤ï¼Œè«‹å†è¼¸å…¥ä¸€æ¬¡ï¼");}
 	    hdsize=hdsize*1000*1000*1000/1024/1024/1024;
 		hdsize=Math.round(hdsize*100)/100;
 	  sizeLyrObj.innerHTML='<span class="colRed">'+hdsize+' GB</span>';
@@ -90,13 +90,13 @@ body {
 	  	document.getElementById('sizeLyr').style.display='none';
 		return false;
 	}
-/* Windows 10 ¤À³Î¾ã¼Æ®e¶q­pºâ */
+/* Windows 10 åˆ†å‰²æ•´æ•¸å®¹é‡è¨ˆç®— */
 /* FAT32 */
 	function calc1() {
     fatsize=document.data.fatsize.value;
-    if (fatsize=="") {return err("½Ğ¿é¤J¼Æ¦r¦n¶Ü¡I");}
+    if (fatsize=="") {return err("è«‹è¼¸å…¥æ•¸å­—å¥½å—ï¼");}
     fatsize=parseFloat(fatsize);
-		if ((fatsize+"")!=document.data.fatsize.value) {return err("®e¶q¤j¤p¿é¤J¿ù»~¡A½Ğ¦A¿é¤J¤@¦¸¡I");}
+		if ((fatsize+"")!=document.data.fatsize.value) {return err("å®¹é‡å¤§å°è¼¸å…¥éŒ¯èª¤ï¼Œè«‹å†è¼¸å…¥ä¸€æ¬¡ï¼");}
 		fatsize=(fatsize-1)*4+1024*fatsize;
 		
 	  sizeLyr1Obj.innerHTML='<span class="colRed">'+fatsize+' MB</span>';
@@ -112,17 +112,17 @@ body {
 		return false;
 	}
 
-/* Windows 10 ¤À³Î¾ã¼Æ®e¶q­pºâ */
+/* Windows 10 åˆ†å‰²æ•´æ•¸å®¹é‡è¨ˆç®— */
 /* NTFS */
 	function calc2() {
     ntfssize=document.data.ntfssize.value;
-    if (ntfssize=="") {return err("½Ğ¿é¤J¼Æ¦r¦n¶Ü¡I");}
+    if (ntfssize=="") {return err("è«‹è¼¸å…¥æ•¸å­—å¥½å—ï¼");}
     ntfssize=parseFloat(ntfssize);
-		if ((ntfssize+"")!=document.data.ntfssize.value) {return err("®e¶q¤j¤p¿é¤J¿ù»~¡A½Ğ¦A¿é¤J¤@¦¸¡I");}
+		if ((ntfssize+"")!=document.data.ntfssize.value) {return err("å®¹é‡å¤§å°è¼¸å…¥éŒ¯èª¤ï¼Œè«‹å†è¼¸å…¥ä¸€æ¬¡ï¼");}
 		ntfssize=ntfssize*1024/7.84423828125; 
-		ntfssize=Math.ceil(ntfssize);			/* µL±ø¥ó¶i¦ì */
+		ntfssize=Math.ceil(ntfssize);			/* ç„¡æ¢ä»¶é€²ä½ */
 		ntfssize=ntfssize*7.84423828125;
-		ntfssize=Math.ceil(ntfssize);			/* µL±ø¥ó¶i¦ì */
+		ntfssize=Math.ceil(ntfssize);			/* ç„¡æ¢ä»¶é€²ä½ */
 	  sizeLyr2Obj.innerHTML='<span class="colRed">'+ntfssize+' MB</span>';
 	  if (document.getElementById)
 	  	document.getElementById('sizeLyr2').style.display='';
@@ -136,20 +136,20 @@ body {
 		return false;
 	}
 
-/* Windows 10 ¨t²Î¦w¸Ë¾ã¼Æ®e¶q­pºâ */
-/* ¾A¥Î¶Ç²ÎµwºĞ©ÎSSD */
+/* Windows 10 ç³»çµ±å®‰è£æ•´æ•¸å®¹é‡è¨ˆç®— */
+/* é©ç”¨å‚³çµ±ç¡¬ç¢Ÿæˆ–SSD */
   function calc3() {
     realsize=document.data.realsize.value;
     recoverysize=document.data.recoverysize.value;
-    if (realsize=="") {return err("½Ğ¿é¤J¼Æ¦r¦n¶Ü¡I");}
+    if (realsize=="") {return err("è«‹è¼¸å…¥æ•¸å­—å¥½å—ï¼");}
     realsize=parseFloat(realsize);
     recoverysize=parseFloat(recoverysize);
-		if ((realsize+"")!=document.data.realsize.value) {return err("®e¶q¤j¤p¿é¤J¿ù»~¡A½Ğ¦A¿é¤J¤@¦¸¡I");}
+		if ((realsize+"")!=document.data.realsize.value) {return err("å®¹é‡å¤§å°è¼¸å…¥éŒ¯èª¤ï¼Œè«‹å†è¼¸å…¥ä¸€æ¬¡ï¼");}
 		realsize=realsize*1024/7.84423828125; 
-		realsize=Math.ceil(realsize);			/* µL±ø¥ó¶i¦ì */
+		realsize=Math.ceil(realsize);			/* ç„¡æ¢ä»¶é€²ä½ */
 		realsize=realsize*7.84423828125;
-		realsize=Math.ceil(realsize);			/* µL±ø¥ó¶i¦ì */
-    if ((recoverysize+"")!=document.data.recoverysize.value) {return err("®e¶q¤j¤p¿é¤J¿ù»~¡A½Ğ¦A¿é¤J¤@¦¸¡I");}
+		realsize=Math.ceil(realsize);			/* ç„¡æ¢ä»¶é€²ä½ */
+    if ((recoverysize+"")!=document.data.recoverysize.value) {return err("å®¹é‡å¤§å°è¼¸å…¥éŒ¯èª¤ï¼Œè«‹å†è¼¸å…¥ä¸€æ¬¡ï¼");}
     recoverysize=recoverysize+realsize+16+100;
 	  sizeLyr3Obj.innerHTML='<span class="colRed">'+recoverysize+' MB</span>';
 	  if (document.getElementById)
@@ -174,91 +174,91 @@ body {
 <h1 class="ml11">
 <span class="text-wrapper">
 <span class="line line1"></span>
-<span class="letters">ºÏºĞ¹ê»Ú®e¶q»P¾ã¼Æ¤À³Î­pºâ¾¹</span>
+<span class="letters">ç£ç¢Ÿå¯¦éš›å®¹é‡èˆ‡æ•´æ•¸åˆ†å‰²è¨ˆç®—å™¨</span>
 </span>
 </h1>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 <tbody><tr>
-<!-- ¹êÅé®e¶q -->
+<!-- å¯¦é«”å®¹é‡ -->
 <td colspan="4"><hr align="center" width="100%" size="2" noshade=""></td>
 </tr>
 <tr>
-<td><div align="right"><font size="5"><font color="white">½Ğ¿é¤J¹ê»ÚµwºĞ¾ã¼Æ®e¶q¤j¤p¡G</font></font></div></td>
+<td><div align="right"><font size="5"><font color="white">è«‹è¼¸å…¥å¯¦éš›ç¡¬ç¢Ÿæ•´æ•¸å®¹é‡å¤§å°ï¼š</font></font></div></td>
 <td><div class="input-group">
-<input type="text" class="form-control" " name="hdsize" id="hdsize" placeholder="³æ¦ìGB" >
+<input type="text" class="form-control" " name="hdsize" id="hdsize" placeholder="å–®ä½GB" >
 <div class="input-group-append">
-<button class="btn btn-primary" type="button" onclick="calc()" id="button-addon2">­pºâ</button>
+<button class="btn btn-primary" type="button" onclick="calc()" id="button-addon2">è¨ˆç®—</button>
 </div>
 </div> </td>
 </tr>
 <tr>
-<td><div align="right"><font size="5"><font color="white">¹ê»Ú¥i¥Î®e¶q¡G</font></font></div></td>
-<td align="left"><div id="sizeLyr" style="display: none">¡@</div></td>
+<td><div align="right"><font size="5"><font color="white">å¯¦éš›å¯ç”¨å®¹é‡ï¼š</font></font></div></td>
+<td align="left"><div id="sizeLyr" style="display: none">ã€€</div></td>
 </tr>
 
-<!-- FAT32¾ã¼Æ®e¶q -->
+<!-- FAT32æ•´æ•¸å®¹é‡ -->
 <td colspan="4"><hr align="center" width="100%" size="2" noshade=""></td>
 </tr>
 <tr>
-<td><div align="right"><font size="5"><font color="white">½Ğ¿é¤JFAT32µwºĞ¾ã¼Æ®e¶q¤j¤p¡G</font></font></div></td>
+<td><div align="right"><font size="5"><font color="white">è«‹è¼¸å…¥FAT32ç¡¬ç¢Ÿæ•´æ•¸å®¹é‡å¤§å°ï¼š</font></font></div></td>
 <td><div class="input-group">
-<input type="text" class="form-control" " name="fatsize" id="fatsize" placeholder="³æ¦ìGB" >
+<input type="text" class="form-control" " name="fatsize" id="fatsize" placeholder="å–®ä½GB" >
 <div class="input-group-append">
-<button class="btn btn-primary" type="button" onclick="calc1()" id="button-addon2">­pºâ</button>
+<button class="btn btn-primary" type="button" onclick="calc1()" id="button-addon2">è¨ˆç®—</button>
 </div>
 </div> </td>
 </tr>
 <tr>
-<td><div align="right"><font size="5"><font color="white">FAT32¾ã¼Æ¤j¤p¡G</font></font></div></td>
-<td align="left"><div id="sizeLyr1" style="display: none">¡@</div></td>
+<td><div align="right"><font size="5"><font color="white">FAT32æ•´æ•¸å¤§å°ï¼š</font></font></div></td>
+<td align="left"><div id="sizeLyr1" style="display: none">ã€€</div></td>
 </tr>
 
-<!-- NTFS¾ã¼Æ®e¶q -->
+<!-- NTFSæ•´æ•¸å®¹é‡ -->
 <td colspan="4"><hr align="center" width="100%" size="2" noshade=""></td>
 </tr>
 <tr>
-<td><div align="right"><font size="5"><font color="white">½Ğ¿é¤JNTFSµwºĞ¾ã¼Æ®e¶q¤j¤p¡G</font></font></div></td>
+<td><div align="right"><font size="5"><font color="white">è«‹è¼¸å…¥NTFSç¡¬ç¢Ÿæ•´æ•¸å®¹é‡å¤§å°ï¼š</font></font></div></td>
 <td><div class="input-group">
-<input type="text" class="form-control" " name="ntfssize" id="ntfssize" placeholder="³æ¦ìGB" >
+<input type="text" class="form-control" " name="ntfssize" id="ntfssize" placeholder="å–®ä½GB" >
 <div class="input-group-append">
-<button class="btn btn-primary"  type="button" onclick="calc2()" id="button-addon2">­pºâ</button>
+<button class="btn btn-primary"  type="button" onclick="calc2()" id="button-addon2">è¨ˆç®—</button>
 </div>
 </div> </td>
 </tr>
 <tr>
-<td><div align="right"><font size="5"><font color="white">NTFS¾ã¼Æ¤j¤p¡G</font></font></div></td>
-<td align="left" ><div id="sizeLyr2" style="display: none">¡@</div></td>
+<td><div align="right"><font size="5"><font color="white">NTFSæ•´æ•¸å¤§å°ï¼š</font></font></div></td>
+<td align="left" ><div id="sizeLyr2" style="display: none">ã€€</div></td>
 </tr>
 
 
-<!-- Windows 10 ¨t²Î¾ã¼Æ®e¶q -->
+<!-- Windows 10 ç³»çµ±æ•´æ•¸å®¹é‡ -->
 <td colspan="4"><hr align="center" width="100%" size="2" noshade=""></td>
 </tr>
 <tr>
-<td><div align="right"><font size="5"><font color="white">½Ğ¿é¤JWindows¨t²ÎµwºĞ¾ã¼Æ®e¶q¤j¤p¡G</font></font></div></td>
+<td><div align="right"><font size="5"><font color="white">è«‹è¼¸å…¥Windowsç³»çµ±ç¡¬ç¢Ÿæ•´æ•¸å®¹é‡å¤§å°ï¼š</font></font></div></td>
 <td><div class="input-group">
-<input type="text" name="realsize" id="realsize" class="form-control" placeholder="³æ¦ìGB" aria-describedby="basic-addon2">
+<input type="text" name="realsize" id="realsize" class="form-control" placeholder="å–®ä½GB" aria-describedby="basic-addon2">
 <div class="input-group-append">
-<span class="input-group-text" style= "background:rgb(24, 104, 253)" id="basic-addon2"><font color="white">¤w§t¨t²Î»P«O¯dªÅ¶¡</font></span>
+<span class="input-group-text" style= "background:rgb(24, 104, 253)" id="basic-addon2"><font color="white">å·²å«ç³»çµ±èˆ‡ä¿ç•™ç©ºé–“</font></span>
 </div>
 </div></td>
 </tr>
 <tr>
-<td><div align="right"><font size="5"><font color="white">½Ğ¿é¤JWindows´_­ì¤À³Î°Ï¤j¤p¡G</font></font></div></td>
+<td><div align="right"><font size="5"><font color="white">è«‹è¼¸å…¥Windowså¾©åŸåˆ†å‰²å€å¤§å°ï¼š</font></font></div></td>
 <td><div class="input-group">
-<input type="text" name="recoverysize" id="recoverysize" class="form-control" " name="recoverysize" id="recoverysize" placeholder="³æ¦ìMB" >
+<input type="text" name="recoverysize" id="recoverysize" class="form-control" " name="recoverysize" id="recoverysize" placeholder="å–®ä½MB" >
 <div class="input-group-append">
-<button class="btn btn-primary" type="button" onclick="calc3()" id="button-addon2">­pºâ</button>
+<button class="btn btn-primary" type="button" onclick="calc3()" id="button-addon2">è¨ˆç®—</button>
 </div>
 </div> </td>
 </tr>
 <tr>
-<td><div align="right"><font size="5"><font color="white">Windows¨t²ÎªÅ¶¡¾ã¼Æ¤j¤p¡G</font></font></div></td>
-<td align="left" ><div id="sizeLyr3" style="display: none">¡@</div></td>
+<td><div align="right"><font size="5"><font color="white">Windowsç³»çµ±ç©ºé–“æ•´æ•¸å¤§å°ï¼š</font></font></div></td>
+<td align="left" ><div id="sizeLyr3" style="display: none">ã€€</div></td>
 </tr>
 <tr>
-<td>¡@</td>
+<td>ã€€</td>
 <td><br \=""></td>
 </tr> 
 </tbody></table>
@@ -279,7 +279,7 @@ body {
 
   var randomBgIndex = Math.round( Math.random() * 4 );
 
-  //¿é¥XÀH¾÷ªº­I´º¹Ï
+  //è¼¸å‡ºéš¨æ©Ÿçš„èƒŒæ™¯åœ–
         document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat no-repeat center center;background-size:cover;background-attachment:fixed;}</style>'); 
 
   sizeLyrObj=document.getElementById("sizeLyr");
